@@ -1,0 +1,13 @@
+title: Takebook
+description: Рабочее пространство съёмочной группы — проекты, дубли и замечания.
+url: "https://ilyakozar-oss.github.io"
+baseurl: "/takebook-site"
+lang: ru
+timezone: Europe/Moscow
+markdown: kramdown
+strict_front_matter: true
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

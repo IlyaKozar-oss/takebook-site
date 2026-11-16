@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<section class="document-wrap">
+  <a class="back-link" href="{{ '/' | relative_url }}"><span aria-hidden="true">←</span> Takebook</a>
+  <div class="eyebrow">{{ page.eyebrow | default: 'Документы приложения' }}</div>
+  <h1>{{ page.title | escape }}</h1>
+  {% if page.updated %}<p class="document-date">Обновлено: {{ page.updated | date: "%d.%m.%Y" }}</p>{% endif %}
+  {% if page.draft_notice %}
+  <div class="document-notice" role="note">
+    <span class="notice-dot" aria-hidden="true"></span>
+    <div><strong>{{ page.notice_title | default: 'Документ готовится к публикации' }}</strong><p>{{ page.notice_text | default: 'Окончательная версия будет доступна на этой странице.' }}</p></div>
+  </div>
+  {% endif %}
+  <div class="document-content">{{ content }}</div>
+</section>

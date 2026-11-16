@@ -9,7 +9,7 @@
   {% if page.draft_notice %}<meta name="robots" content="noindex, follow">{% endif %}
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="icon" href="{{ '/assets/mark.svg' | relative_url }}" type="image/svg+xml">
-  <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} · {% endif %}Takebook">

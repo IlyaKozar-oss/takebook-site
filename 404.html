@@ -1,11 +1,8 @@
 ---
 layout: default
+lang: en
 title: Page not found
 permalink: /404.html
+translation_path: /404.html
 ---
-<section class="document-wrap not-found">
-  <p class="eyebrow">404 / Page not found</p>
-  <h1>This take<br>is missing.</h1>
-  <p>Check the address or head back to the Takebook home page.</p>
-  <a class="button" href="{{ '/' | relative_url }}">Back to home <span aria-hidden="true">↗</span></a>
-</section>
+{% include not-found.html %}

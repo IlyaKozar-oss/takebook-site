@@ -1,64 +1,43 @@
 # Takebook — лендинг и документы
 
-Публичный сайт приложения Takebook на английском языке. GitHub Pages собирает страницы из Markdown и HTML через Jekyll и автоматически публикует каждый push в `main`.
+Публичный сайт Takebook на английском и русском языках. Сборка Jekyll и публикация GitHub Pages запускаются при каждом push в `main`.
 
 ## Адреса
 
-- Главная: https://ilyakozar-oss.github.io/takebook-site/
-- Privacy Policy: https://ilyakozar-oss.github.io/takebook-site/privacy/
-- Условия использования: https://ilyakozar-oss.github.io/takebook-site/terms/
-- Поддержка: https://ilyakozar-oss.github.io/takebook-site/support/
+| Страница | English | Русский |
+| --- | --- | --- |
+| Главная | https://jelliedfish-oss.github.io/takebook-site/ | https://jelliedfish-oss.github.io/takebook-site/ru/ |
+| Privacy Policy | https://jelliedfish-oss.github.io/takebook-site/privacy/ | https://jelliedfish-oss.github.io/takebook-site/ru/privacy/ |
+| Terms of Use | https://jelliedfish-oss.github.io/takebook-site/terms/ | https://jelliedfish-oss.github.io/takebook-site/ru/terms/ |
+| Support | https://jelliedfish-oss.github.io/takebook-site/support/ | https://jelliedfish-oss.github.io/takebook-site/ru/support/ |
 
-## Как добавить контент
+Переключатель EN/RU сохраняет текущую страницу: например, `/privacy/` переключается на `/ru/privacy/`.
 
-1. Откройте нужный файл на GitHub: `privacy.md`, `terms.md` или `support.md`.
-2. Нажмите Edit. Сохраните блок между первыми двумя строками `---`: он задаёт заголовок и постоянный адрес страницы.
-3. Добавьте текст **после второго `---`**. Можно использовать обычный Markdown: заголовки `##`, списки, ссылки и таблицы.
-4. После согласования окончательного текста измените `draft_notice: true` на `draft_notice: false`. При необходимости добавьте в блок настроек `updated: 2026-11-16`, указав фактическую дату документа.
-5. Нажмите Commit changes и сохраните в `main`. Workflow **Deploy GitHub Pages** автоматически опубликует обновление. Дождитесь зелёного статуса в Actions.
+## Добавление контента
 
-Пример структуры файла после добавления утверждённого текста:
+1. Английские документы: `privacy.md`, `terms.md`, `support.md`. Русские: `ru/privacy.md`, `ru/terms.md`, `ru/support.md`.
+2. Сохраните настройки между двумя строками `---`. Добавьте окончательный текст после второго `---`.
+3. После согласования текста измените `draft_notice: true` на `draft_notice: false` для соответствующей языковой версии. При необходимости добавьте `updated: YYYY-MM-DD` с фактической датой документа.
+4. Сохраните изменения в `main`. Workflow **Deploy GitHub Pages** автоматически опубликует их; дождитесь зелёного статуса в Actions.
 
-```markdown
----
-layout: document
-title: Privacy Policy
-permalink: /privacy/
-draft_notice: false
-updated: 2026-11-16
----
+Сейчас все документы содержат только уведомление «Здесь появится информация» / «Information will appear here» и закрыты от индексации. До отправки приложения в App Store нужно добавить окончательные тексты и реальные контакты.
 
-## О приложении
+## Переводы и структура
 
-Здесь начинается согласованный текст документа.
-```
-
-Для поддержки при готовности контактов также удалите необязательные `notice_title` и `notice_text` либо оставьте их: при `draft_notice: false` они не отображаются.
-
-## Что требуется заполнить
-
-Сейчас опубликован каркас, а документы помечены как готовящиеся к публикации. Перед использованием Privacy Policy и Support URL для App Store нужно добавить окончательные тексты и реальные контакты.
-
-- Privacy Policy: оператор/разработчик и контакт, категории и цели обработки данных, используемые сервисы, доступ участников проекта, хранение и удаление, права пользователя и обращение по вопросам конфиденциальности.
-- Условия: оператор и контакты, правила аккаунта и проектного контента, права на материалы, ограничения и обработка жалоб, применимые условия и юрисдикция.
-- Поддержка: работающий публичный канал связи, краткая помощь, инструкции по удалению аккаунта.
-
-Юридические сведения и контакты намеренно не выдуманы. Не публикуйте пароли, API-ключи, service-role токены, данные тестовых аккаунтов или приватные материалы пользователей.
-
-## Структура
-
-- `index.html` — главная страница.
-- `privacy.md`, `terms.md`, `support.md` — редактируемые документы.
-- `_layouts/` — общий шаблон и шаблон документа.
-- `assets/site.css` — адаптивные стили.
-- `assets/mark.svg` — знак Takebook.
-- `_config.yml` — название, описание, URL и базовый путь проекта.
+- `_data/translations.yml` — тексты лендинга, навигации и заглушек на обоих языках.
+- `_includes/landing.html` — общий макет главной страницы.
+- `_layouts/default.html` — навигация, переключение языка, метаданные и подвал.
+- `_layouts/document.html` — макет документов.
+- `index.html`, `ru/index.html` — точки входа двух версий.
+- `404.html`, `ru/404.html` — страницы ошибки.
+- `assets/site.css`, `assets/mark.svg` — оформление.
+- `_config.yml` — GitHub Pages URL и базовый путь.
 - `.github/workflows/pages.yml` — сборка и публикация.
 
-Сайт не требует базы данных, платного хостинга, клиентского JavaScript, сторонних шрифтов или дополнительных секретов для деплоя. Workflow использует стандартный `GITHUB_TOKEN` и OIDC GitHub Pages.
+## Подключение в приложении
 
-## Настройки Pages
+Общая конфигурация `PhoneLegalLinks` используется на экранах телефона, пароля и профиля Takebook. `TAKEBOOK_TERMS_URL`, `TAKEBOOK_PRIVACY_URL`, `TAKEBOOK_HELP_URL` в `TakebookDemoApp.xcconfig` ведут на разные русские страницы `/ru/terms/`, `/ru/privacy/`, `/ru/support/`, соответствующие текущему русскому интерфейсу приложения. На сайте можно переключить язык.
 
-В Settings → Pages выбран источник **GitHub Actions**. В Actions доступны автоматическая публикация из `main` и ручной запуск **Run workflow**. Домены `github.io` обслуживаются по HTTPS.
+При смене GitHub-аккаунта или домена обновите `url` в `_config.yml`, remote репозитория и три адреса документов в конфигурации приложения. Ссылки приглашений и видеодублей требуют отдельного сервера и не относятся к юридическим страницам.
 
-При изменении имени репозитория или подключении собственного домена обновите `url` и `baseurl` в `_config.yml`. Все внутренние ссылки используют `relative_url` и учитывают базовый путь `/takebook-site`.
+Сайт не требует базы данных, клиентского JavaScript, сторонних шрифтов или дополнительных секретов. Не добавляйте в публичный репозиторий пароли, API-ключи и приватные пользовательские материалы.

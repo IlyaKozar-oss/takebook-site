@@ -1,9 +1,10 @@
 ---
 layout: document
+lang: en
 title: Terms of Use
-description: Terms of Use for the Takebook app.
 permalink: /terms/
+translation_path: /terms/
 draft_notice: true
 ---
 
-<!-- Add the approved terms here. See README.md for editing instructions. -->
+<!-- Add the approved EN content here, then set draft_notice to false. -->

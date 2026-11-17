@@ -1,0 +1,98 @@
+en:
+  description: A workspace for film crews — projects, video takes, and feedback.
+  og_locale: en_US
+  home_label: Takebook — home
+  skip: Skip to content
+  navigation: Main navigation
+  language: Language
+  privacy: Privacy Policy
+  terms: Terms of Use
+  support: Support
+  documents: App documents
+  footer: For the stories you film together.
+  hero_eyebrow: A workspace for film crews
+  hero_line_one: Every take.
+  hero_line_two: In its place
+  hero_description: Organize video takes by shooting day, leave text and voice notes, and choose the best take together.
+  hero_caption: From the first take to the final decision.
+  preview_label: Demo project
+  preview_status: In progress
+  preview_day: Shooting day / 01
+  preview_title: White Night
+  preview_location: Interior
+  preview_take: Take 01
+  preview_selected: Selected take
+  preview_notes: 2 notes
+  about_eyebrow: Less searching. More shooting.
+  about_line_one: Keep the context
+  about_line_two: with every take.
+  features:
+    - title: Organized footage
+      text: Projects, shooting days, and takes, brought together in one clear structure.
+    - title: Feedback in context
+      text: Keep text and voice notes alongside the video, so no detail gets lost.
+    - title: A clear choice
+      text: Your selected take is visible to everyone on the project and easy to find again.
+  documents_eyebrow: Good to know
+  documents_heading: Documents & support
+  documents_description: How to use Takebook and how your data is handled.
+  privacy_kicker: 01 / Privacy Policy
+  terms_kicker: 02 / Terms
+  support_kicker: 03 / Support
+  placeholder_title: Information coming soon
+  placeholder_text: Information will appear here. This page is being prepared.
+  updated: Last updated
+  not_found: Page not found
+  not_found_line_one: This take
+  not_found_line_two: is missing.
+  not_found_text: Check the address or head back to the Takebook home page.
+  back_home: Back to home
+ru:
+  description: Рабочее пространство съёмочной группы — проекты, дубли и замечания.
+  og_locale: ru_RU
+  home_label: Takebook — главная
+  skip: К содержимому
+  navigation: Главная навигация
+  language: Язык
+  privacy: Политика конфиденциальности
+  terms: Условия использования
+  support: Поддержка
+  documents: Документы приложения
+  footer: Для историй, которые вы снимаете вместе.
+  hero_eyebrow: Рабочее пространство съёмочной группы
+  hero_line_one: Каждый дубль
+  hero_line_two: на своём месте
+  hero_description: Собирайте видеодубли по съёмочным дням, оставляйте текстовые и голосовые замечания, выбирайте рабочий вариант вместе с командой.
+  hero_caption: От первого дубля до финального решения.
+  preview_label: Пример проекта
+  preview_status: В работе
+  preview_day: Съёмочный день / 01
+  preview_title: Белая ночь
+  preview_location: Интерьер
+  preview_take: Дубль 01
+  preview_selected: Рабочий дубль
+  preview_notes: 2 замечания
+  about_eyebrow: Меньше поиска. Больше съёмки.
+  about_line_one: Контекст остаётся
+  about_line_two: рядом с дублем.
+  features:
+    - title: Порядок в материалах
+      text: Проект, съёмочный день и его дубли складываются в понятную структуру.
+    - title: Замечания по делу
+      text: Текст и голосовые заметки помогают сохранить детали обсуждения рядом с видео.
+    - title: Понятное решение
+      text: Выбранный рабочий дубль виден участникам проекта — к нему легко вернуться.
+  documents_eyebrow: Важная информация
+  documents_heading: Документы и поддержка
+  documents_description: Информация об использовании Takebook и обращении с данными.
+  privacy_kicker: 01 / Конфиденциальность
+  terms_kicker: 02 / Условия
+  support_kicker: 03 / Поддержка
+  placeholder_title: Информация скоро появится
+  placeholder_text: Здесь появится информация. Страница готовится к публикации.
+  updated: Обновлено
+  not_found: Страница не найдена
+  not_found_line_one: Кажется, здесь
+  not_found_line_two: другой дубль.
+  not_found_text: Проверьте адрес или вернитесь на главную страницу Takebook.
+  back_home: На главную

@@ -1,9 +1,10 @@
 ---
 layout: document
+lang: en
 title: Privacy Policy
-description: Privacy Policy for the Takebook app.
 permalink: /privacy/
+translation_path: /privacy/
 draft_notice: true
 ---
 
-<!-- Add the approved policy here. See README.md for editing instructions and required details. -->
+<!-- Add the approved EN content here, then set draft_notice to false. -->

@@ -1,0 +1,9 @@
+{% assign locale = page.lang | default: site.lang %}
+{% assign t = site.data.translations[locale] %}
+{% assign prefix = '' %}{% if locale == 'ru' %}{% assign prefix = '/ru' %}{% endif %}
+<section class="document-wrap not-found">
+  <p class="eyebrow">404 / {{ t.not_found | escape }}</p>
+  <h1>{{ t.not_found_line_one | escape }}<br>{{ t.not_found_line_two | escape }}</h1>
+  <p>{{ t.not_found_text | escape }}</p>
+  <a class="button" href="{{ prefix | append: '/' | relative_url }}">{{ t.back_home | escape }} <span aria-hidden="true">↗</span></a>
+</section>

@@ -1,15 +1,18 @@
 ---
 layout: default
 ---
+{% assign locale = page.lang | default: site.lang %}
+{% assign t = site.data.translations[locale] %}
+{% assign prefix = '' %}{% if locale == 'ru' %}{% assign prefix = '/ru' %}{% endif %}
 <section class="document-wrap">
-  <a class="back-link" href="{{ '/' | relative_url }}"><span aria-hidden="true">←</span> Takebook</a>
-  <div class="eyebrow">{{ page.eyebrow | default: 'App documents' }}</div>
+  <a class="back-link" href="{{ prefix | append: '/' | relative_url }}"><span aria-hidden="true">←</span> Takebook</a>
+  <div class="eyebrow">{{ t.documents | escape }}</div>
   <h1>{{ page.title | escape }}</h1>
-  {% if page.updated %}<p class="document-date">Last updated: {{ page.updated | date: "%B %-d, %Y" }}</p>{% endif %}
+  {% if page.updated %}<p class="document-date">{{ t.updated | escape }}: {{ page.updated | date: "%Y-%m-%d" }}</p>{% endif %}
   {% if page.draft_notice %}
   <div class="document-notice" role="note">
     <span class="notice-dot" aria-hidden="true"></span>
-    <div><strong>{{ page.notice_title | default: 'This document is being prepared' }}</strong><p>{{ page.notice_text | default: 'The final version will be published on this page.' }}</p></div>
+    <div><strong>{{ t.placeholder_title | escape }}</strong><p>{{ t.placeholder_text | escape }}</p></div>
   </div>
   {% endif %}
   <div class="document-content">{{ content }}</div>

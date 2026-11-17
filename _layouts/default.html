@@ -1,41 +1,55 @@
+{% assign locale = page.lang | default: site.lang %}
+{% assign t = site.data.translations[locale] %}
+{% assign prefix = '' %}{% if locale == 'ru' %}{% assign prefix = '/ru' %}{% endif %}
+{% assign translation_path = page.translation_path | default: '/' %}
+{% assign russian_path = '/ru' | append: translation_path %}
 <!doctype html>
-<html lang="{{ site.lang | default: 'en' }}">
+<html lang="{{ locale | escape }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
-  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <meta name="description" content="{{ page.description | default: t.description | escape }}">
   {% if page.draft_notice %}<meta name="robots" content="noindex, follow">{% endif %}
   <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ translation_path | absolute_url }}">
+  <link rel="alternate" hreflang="ru" href="{{ russian_path | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ translation_path | absolute_url }}">
   <link rel="icon" href="{{ '/assets/mark.svg' | relative_url }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
+  <meta property="og:locale" content="{{ t.og_locale | escape }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} · {% endif %}Takebook">
-  <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+  <meta property="og:description" content="{{ page.description | default: t.description | escape }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">{{ t.skip | escape }}</a>
   <div class="site-shell">
     <header class="site-header">
-      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Takebook — home">
+      <a class="brand" href="{{ prefix | append: '/' | relative_url }}" aria-label="{{ t.home_label | escape }}">
         <img src="{{ '/assets/mark.svg' | relative_url }}" width="36" height="36" alt="">
         <span>Takebook</span>
       </a>
-      <nav class="header-nav" aria-label="Main navigation">
-        <a href="{{ '/privacy/' | relative_url }}"{% if page.url == '/privacy/' %} aria-current="page"{% endif %}>Privacy Policy</a>
-        <a href="{{ '/support/' | relative_url }}"{% if page.url == '/support/' %} aria-current="page"{% endif %}>Support <span aria-hidden="true">↗</span></a>
-      </nav>
+      <div class="header-controls">
+        <nav class="header-nav" aria-label="{{ t.navigation | escape }}">
+          <a href="{{ prefix | append: '/privacy/' | relative_url }}"{% if translation_path == '/privacy/' %} aria-current="page"{% endif %}>{{ t.privacy | escape }}</a>
+          <a href="{{ prefix | append: '/support/' | relative_url }}"{% if translation_path == '/support/' %} aria-current="page"{% endif %}>{{ t.support | escape }} <span aria-hidden="true">↗</span></a>
+        </nav>
+        <nav class="language-switch" aria-label="{{ t.language | escape }}">
+          <a href="{{ translation_path | relative_url }}" lang="en" hreflang="en"{% if locale == 'en' %} aria-current="true"{% endif %}>EN</a>
+          <a href="{{ russian_path | relative_url }}" lang="ru" hreflang="ru"{% if locale == 'ru' %} aria-current="true"{% endif %}>RU</a>
+        </nav>
+      </div>
     </header>
     <main id="main">{{ content }}</main>
     <footer class="site-footer">
-      <div><a class="footer-brand" href="{{ '/' | relative_url }}">Takebook</a><p>For the stories you film together.</p></div>
-      <nav aria-label="App documents">
-        <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
-        <a href="{{ '/terms/' | relative_url }}">Terms of Use</a>
-        <a href="{{ '/support/' | relative_url }}">Support</a>
+      <div><a class="footer-brand" href="{{ prefix | append: '/' | relative_url }}">Takebook</a><p>{{ t.footer | escape }}</p></div>
+      <nav aria-label="{{ t.documents | escape }}">
+        <a href="{{ prefix | append: '/privacy/' | relative_url }}">{{ t.privacy | escape }}</a>
+        <a href="{{ prefix | append: '/terms/' | relative_url }}">{{ t.terms | escape }}</a>
+        <a href="{{ prefix | append: '/support/' | relative_url }}">{{ t.support | escape }}</a>
       </nav>
     </footer>
   </div>

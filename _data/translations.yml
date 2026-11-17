@@ -1,7 +1,8 @@
 en:
-  description: Takebook helps film crews organize shooting days, record and review video takes, leave text and voice notes, and keep track of the director’s selected take on iPhone and iPad.
+  brand: Smotri tut
+  description: Smotri tut helps film crews organize shooting days, record and review video takes, leave text and voice notes, and keep track of the director’s selected take on iPhone and iPad.
   og_locale: en_US
-  home_label: Takebook — home
+  home_label: Smotri tut — home
   skip: Skip to content
   navigation: Main navigation
   language: Language
@@ -15,7 +16,7 @@ en:
   hero_eyebrow: A workspace for film crews
   hero_line_one: Every take.
   hero_line_two: In its place
-  hero_description: Takebook brings video takes, crew feedback, and the director’s choice into one workspace. Record or import a take, discuss the details, and return to the right version when you need it.
+  hero_description: Smotri tut brings video takes, crew feedback, and the director’s choice into one workspace. Record or import a take, discuss the details, and return to the right version when you need it.
   hero_caption: For iPhone and iPad · English and Russian
   preview_label: Demo project
   preview_status: In progress
@@ -30,7 +31,7 @@ en:
   about_eyebrow: Less searching. More shooting.
   about_line_one: Keep the context
   about_line_two: with every take.
-  about_description: On a busy shoot, it helps to know which day a clip belongs to, what the crew noticed, and which take the director chose. Takebook keeps those details with the footage, ready for the next discussion.
+  about_description: On a busy shoot, it helps to know which day a clip belongs to, what the crew noticed, and which take the director chose. Smotri tut keeps those details with the footage, ready for the next discussion.
   features:
     - title: A clear home for the footage
       text: Browse projects, see the crew and their roles, then open a shooting day with its date, location, and takes. Find the right material through the same structure each time.
@@ -71,10 +72,10 @@ en:
     - question: What can I use during playback?
       answer: Play and pause the video, switch to audio mode while a take is playing, and listen to its voice notes. You can return to the shooting day’s list to review another take and its remarks.
     - question: Which devices and languages are supported?
-      answer: Takebook is designed for iPhone and iPad. The interface is available in English and Russian, with light and dark appearance that follows your device setting.
+      answer: Smotri tut is designed for iPhone and iPad. The interface is available in English and Russian, with light and dark appearance that follows your device setting.
   documents_eyebrow: Good to know
   documents_heading: Documents & support
-  documents_description: How to use Takebook and how your data is handled.
+  documents_description: How to use Smotri tut and how your data is handled.
   privacy_kicker: 01 / Privacy Policy
   terms_kicker: 02 / Terms
   support_kicker: 03 / Support
@@ -84,12 +85,13 @@ en:
   not_found: Page not found
   not_found_line_one: This take
   not_found_line_two: is missing.
-  not_found_text: Check the address or head back to the Takebook home page.
+  not_found_text: Check the address or head back to the Smotri tut home page.
   back_home: Back to home
 ru:
-  description: Takebook помогает съёмочной группе организовать съёмочные дни, записывать и просматривать видеодубли, оставлять текстовые и голосовые замечания и видеть выбор режиссёра на iPhone и iPad.
+  brand: Смотри тут
+  description: Смотри тут помогает съёмочной группе организовать съёмочные дни, записывать и просматривать видеодубли, оставлять текстовые и голосовые замечания и видеть выбор режиссёра на iPhone и iPad.
   og_locale: ru_RU
-  home_label: Takebook — главная
+  home_label: Смотри тут — главная
   skip: К содержимому
   navigation: Главная навигация
   language: Язык
@@ -103,7 +105,7 @@ ru:
   hero_eyebrow: Рабочее пространство съёмочной группы
   hero_line_one: Каждый дубль
   hero_line_two: на своём месте
-  hero_description: Takebook объединяет видеодубли, замечания группы и выбор режиссёра в одном рабочем пространстве. Запишите или импортируйте дубль, обсудите детали и вернитесь к нужному варианту в любой момент.
+  hero_description: Смотри тут объединяет видеодубли, замечания группы и выбор режиссёра в одном рабочем пространстве. Запишите или импортируйте дубль, обсудите детали и вернитесь к нужному варианту в любой момент.
   hero_caption: Для iPhone и iPad · На русском и английском
   preview_label: Пример проекта
   preview_status: В работе
@@ -118,7 +120,7 @@ ru:
   about_eyebrow: Меньше поиска. Больше съёмки.
   about_line_one: Контекст остаётся
   about_line_two: рядом с дублем.
-  about_description: Во время съёмки важно помнить, к какому дню относится видео, что заметила группа и какой вариант выбрал режиссёр. Takebook хранит эти детали рядом с материалом, чтобы к обсуждению было легко вернуться.
+  about_description: Во время съёмки важно помнить, к какому дню относится видео, что заметила группа и какой вариант выбрал режиссёр. Смотри тут хранит эти детали рядом с материалом, чтобы к обсуждению было легко вернуться.
   features:
     - title: Понятное место для материала
       text: Откройте проект, посмотрите состав и роли группы, затем перейдите к съёмочному дню с датой, локацией и дублями. Нужное видео каждый раз находится в знакомой структуре.
@@ -159,10 +161,10 @@ ru:
     - question: Что доступно при просмотре?
       answer: Запускайте и останавливайте видео, переключайтесь в аудиорежим во время воспроизведения и слушайте голосовые замечания. Из списка съёмочного дня можно открыть другой дубль и вернуться к его обсуждению.
     - question: Какие устройства и языки поддерживаются?
-      answer: Takebook предназначен для iPhone и iPad. Интерфейс доступен на русском и английском языках; светлая и тёмная темы следуют настройке устройства.
+      answer: Приложение «Смотри тут» предназначено для iPhone и iPad. Интерфейс доступен на русском и английском языках; светлая и тёмная темы следуют настройке устройства.
   documents_eyebrow: Важная информация
   documents_heading: Документы и поддержка
-  documents_description: Информация об использовании Takebook и обращении с данными.
+  documents_description: Информация об использовании «Смотри тут» и обращении с данными.
   privacy_kicker: 01 / Конфиденциальность
   terms_kicker: 02 / Условия
   support_kicker: 03 / Поддержка
@@ -172,5 +174,5 @@ ru:
   not_found: Страница не найдена
   not_found_line_one: Кажется, здесь
   not_found_line_two: другой дубль.
-  not_found_text: Проверьте адрес или вернитесь на главную страницу Takebook.
+  not_found_text: Проверьте адрес или вернитесь на главную страницу «Смотри тут».
   back_home: На главную

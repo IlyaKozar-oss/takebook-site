@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+  <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ t.brand | escape }}</title>
   <meta name="description" content="{{ page.description | default: t.description | escape }}">
   {% if page.draft_notice %}<meta name="robots" content="noindex, follow">{% endif %}
   <link rel="canonical" href="{{ page.url | absolute_url }}">
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="{{ t.og_locale | escape }}">
-  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} · {% endif %}Takebook">
+  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} · {% endif %}{{ t.brand | escape }}">
   <meta property="og:description" content="{{ page.description | default: t.description | escape }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
 </head>
@@ -31,7 +31,7 @@
     <header class="site-header">
       <a class="brand" href="{{ prefix | append: '/' | relative_url }}" aria-label="{{ t.home_label | escape }}">
         <img src="{{ '/assets/brand-mark.png' | relative_url }}" width="32" height="32" alt="">
-        <span>Takebook</span>
+        <span>{{ t.brand | escape }}</span>
       </a>
       <div class="header-controls">
         <nav class="header-nav" aria-label="{{ t.navigation | escape }}">
@@ -47,7 +47,7 @@
     </header>
     <main id="main">{{ content }}</main>
     <footer class="site-footer">
-      <div><a class="footer-brand" href="{{ prefix | append: '/' | relative_url }}">Takebook</a><p>{{ t.footer | escape }}</p></div>
+      <div><a class="footer-brand" href="{{ prefix | append: '/' | relative_url }}">{{ t.brand | escape }}</a><p>{{ t.footer | escape }}</p></div>
       <nav aria-label="{{ t.documents | escape }}">
         <a href="{{ prefix | append: '/privacy/' | relative_url }}">{{ t.privacy | escape }}</a>
         <a href="{{ prefix | append: '/terms/' | relative_url }}">{{ t.terms | escape }}</a>

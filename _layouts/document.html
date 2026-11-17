@@ -5,7 +5,7 @@ layout: default
 {% assign t = site.data.translations[locale] %}
 {% assign prefix = '' %}{% if locale == 'ru' %}{% assign prefix = '/ru' %}{% endif %}
 <section class="document-wrap">
-  <a class="back-link" href="{{ prefix | append: '/' | relative_url }}"><span aria-hidden="true">←</span> Takebook</a>
+  <a class="back-link" href="{{ prefix | append: '/' | relative_url }}"><span aria-hidden="true">←</span> {{ t.brand | escape }}</a>
   <div class="eyebrow">{{ t.documents | escape }}</div>
   <h1>{{ page.title | escape }}</h1>
   {% if page.updated %}<p class="document-date">{{ t.updated | escape }}: {{ page.updated | date: "%Y-%m-%d" }}</p>{% endif %}

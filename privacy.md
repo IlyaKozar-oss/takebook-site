@@ -1,9 +1,9 @@
 ---
 layout: document
-title: Политика конфиденциальности
-description: Политика конфиденциальности приложения Takebook.
+title: Privacy Policy
+description: Privacy Policy for the Takebook app.
 permalink: /privacy/
 draft_notice: true
 ---
 
-<!-- Добавьте согласованный текст политики сюда. Инструкции и список необходимых сведений находятся в README.md. -->
+<!-- Add the approved policy here. See README.md for editing instructions and required details. -->

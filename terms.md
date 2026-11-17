@@ -1,9 +1,9 @@
 ---
 layout: document
-title: Условия использования
-description: Условия использования приложения Takebook.
+title: Terms of Use
+description: Terms of Use for the Takebook app.
 permalink: /terms/
 draft_notice: true
 ---
 
-<!-- Добавьте согласованный текст условий сюда. Инструкции находятся в README.md. -->
+<!-- Add the approved terms here. See README.md for editing instructions. -->

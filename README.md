@@ -1,6 +1,6 @@
 # Takebook — лендинг и документы
 
-Публичный сайт приложения Takebook. GitHub Pages собирает страницы из Markdown и HTML через Jekyll и автоматически публикует каждый push в `main`.
+Публичный сайт приложения Takebook на английском языке. GitHub Pages собирает страницы из Markdown и HTML через Jekyll и автоматически публикует каждый push в `main`.
 
 ## Адреса
 
@@ -22,7 +22,7 @@
 ```markdown
 ---
 layout: document
-title: Политика конфиденциальности
+title: Privacy Policy
 permalink: /privacy/
 draft_notice: false
 updated: 2026-11-16

@@ -1,8 +1,8 @@
 title: Takebook
-description: Рабочее пространство съёмочной группы — проекты, дубли и замечания.
+description: A workspace for film crews — projects, video takes, and feedback.
 url: "https://ilyakozar-oss.github.io"
 baseurl: "/takebook-site"
-lang: ru
+lang: en
 timezone: Europe/Moscow
 markdown: kramdown
 strict_front_matter: true

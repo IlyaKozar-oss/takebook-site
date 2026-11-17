@@ -1,12 +1,12 @@
 ---
 layout: document
-title: Поддержка
-description: Информация о поддержке пользователей Takebook.
-eyebrow: Помощь пользователям
+title: Support
+description: Support information for Takebook users.
+eyebrow: Here to help
 permalink: /support/
 draft_notice: true
-notice_title: Информация о поддержке готовится
-notice_text: Контакты и ответы на вопросы будут опубликованы на этой странице.
+notice_title: Support information is coming soon
+notice_text: Contact details and answers to common questions will be published on this page.
 ---
 
-<!-- Добавьте подтверждённый публичный контакт поддержки и инструкции по удалению аккаунта. Не публикуйте пароли или данные ревьюера. -->
+<!-- Add a verified public support contact and account deletion instructions. Do not publish passwords or reviewer credentials. -->

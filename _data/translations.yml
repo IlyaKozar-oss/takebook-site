@@ -1,5 +1,5 @@
 en:
-  description: A workspace for film crews — projects, video takes, and feedback.
+  description: Takebook helps film crews organize shooting days, record and review video takes, leave text and voice notes, and keep track of the director’s selected take on iPhone and iPad.
   og_locale: en_US
   home_label: Takebook — home
   skip: Skip to content
@@ -9,12 +9,14 @@ en:
   terms: Terms of Use
   support: Support
   documents: App documents
+  app_features: About the app
+  explore_workflow: See how it works
   footer: For the stories you film together.
   hero_eyebrow: A workspace for film crews
   hero_line_one: Every take.
   hero_line_two: In its place
-  hero_description: Organize video takes by shooting day, leave text and voice notes, and choose the best take together.
-  hero_caption: From the first take to the final decision.
+  hero_description: Takebook brings video takes, crew feedback, and the director’s choice into one workspace. Record or import a take, discuss the details, and return to the right version when you need it.
+  hero_caption: For iPhone and iPad · English and Russian
   preview_label: Demo project
   preview_status: In progress
   preview_day: Shooting day / 01
@@ -23,16 +25,53 @@ en:
   preview_take: Take 01
   preview_selected: Selected take
   preview_notes: 2 notes
+  preview_note_author: Director · Text note
+  preview_note_text: Hold on the open book a little longer before moving toward the window.
   about_eyebrow: Less searching. More shooting.
   about_line_one: Keep the context
   about_line_two: with every take.
+  about_description: On a busy shoot, it helps to know which day a clip belongs to, what the crew noticed, and which take the director chose. Takebook keeps those details with the footage, ready for the next discussion.
   features:
-    - title: Organized footage
-      text: Projects, shooting days, and takes, brought together in one clear structure.
-    - title: Feedback in context
-      text: Keep text and voice notes alongside the video, so no detail gets lost.
-    - title: A clear choice
-      text: Your selected take is visible to everyone on the project and easy to find again.
+    - title: A clear home for the footage
+      text: Browse projects, see the crew and their roles, then open a shooting day with its date, location, and takes. Find the right material through the same structure each time.
+    - title: Feedback beside the video
+      text: Play a take and leave a text or recorded voice note. Remarks stay attached to that take, with the author shown, so the crew can revisit the discussion in context.
+    - title: A visible director’s choice
+      text: The director can select a working take for the shooting day. After the decision is saved, the crew can see which take was chosen when they return to the project.
+  workflow_eyebrow: From the set to the discussion
+  workflow_heading: A shooting day in four steps.
+  workflow_description: Follow the footage from its project to the decision, with the feedback close at hand.
+  workflow_steps:
+    - title: Open the shooting day
+      text: Find your project, check the crew, date, and location, and open the day’s list of takes.
+    - title: Add the next take
+      text: Record a video in the app, with or without sound, or import one from your library. Add an optional text note and upload it to the shooting day.
+    - title: Watch and discuss
+      text: Review the video, replay voice notes, and add your own observations about the performance, framing, movement, or sound.
+    - title: Keep the decision
+      text: The director marks the chosen take. The selection stays with the shooting day, alongside the footage and remarks that informed it.
+  workflow_limit: Each take can be up to 60 seconds and 150 MB. The app checks the video before upload.
+  crew_eyebrow: For the people making the shot
+  crew_heading: One project. Different perspectives.
+  crew_description: For short films, student productions, music videos, and other shoots where a crew needs to review short takes and keep a shared record of feedback.
+  crew_roles:
+    - title: Directors
+      text: Review the takes in sequence, leave direction, and make the selected take easy for the crew to find.
+    - title: Camera and sound crew
+      text: Add footage and leave specific observations about the image, camera movement, or sound, using text or voice.
+    - title: The wider crew
+      text: Return to the shooting day to review the material, read the remarks, and see the saved selection.
+  practical_eyebrow: Before your next shoot
+  practical_heading: The details that matter.
+  practical_questions:
+    - question: How does the crew get access?
+      answer: The project author can create an invitation link and a code for joining the project. The crew list shows each member’s role; actions such as selecting the working take depend on that role. A take can also have its own share link, created after access verification.
+    - question: What happens if the connection drops?
+      answer: Previously loaded data and locally saved media can remain available. Unsent video takes and text or voice notes can be kept as drafts on that device. Uploading, publishing notes, and saving shared decisions require a connection; an unsent draft is not yet visible to the crew.
+    - question: What can I use during playback?
+      answer: Play and pause the video, switch to audio mode while a take is playing, and listen to its voice notes. You can return to the shooting day’s list to review another take and its remarks.
+    - question: Which devices and languages are supported?
+      answer: Takebook is designed for iPhone and iPad. The interface is available in English and Russian, with light and dark appearance that follows your device setting.
   documents_eyebrow: Good to know
   documents_heading: Documents & support
   documents_description: How to use Takebook and how your data is handled.
@@ -48,7 +87,7 @@ en:
   not_found_text: Check the address or head back to the Takebook home page.
   back_home: Back to home
 ru:
-  description: Рабочее пространство съёмочной группы — проекты, дубли и замечания.
+  description: Takebook помогает съёмочной группе организовать съёмочные дни, записывать и просматривать видеодубли, оставлять текстовые и голосовые замечания и видеть выбор режиссёра на iPhone и iPad.
   og_locale: ru_RU
   home_label: Takebook — главная
   skip: К содержимому
@@ -58,12 +97,14 @@ ru:
   terms: Условия использования
   support: Поддержка
   documents: Документы приложения
+  app_features: О приложении
+  explore_workflow: Как это работает
   footer: Для историй, которые вы снимаете вместе.
   hero_eyebrow: Рабочее пространство съёмочной группы
   hero_line_one: Каждый дубль
   hero_line_two: на своём месте
-  hero_description: Собирайте видеодубли по съёмочным дням, оставляйте текстовые и голосовые замечания, выбирайте рабочий вариант вместе с командой.
-  hero_caption: От первого дубля до финального решения.
+  hero_description: Takebook объединяет видеодубли, замечания группы и выбор режиссёра в одном рабочем пространстве. Запишите или импортируйте дубль, обсудите детали и вернитесь к нужному варианту в любой момент.
+  hero_caption: Для iPhone и iPad · На русском и английском
   preview_label: Пример проекта
   preview_status: В работе
   preview_day: Съёмочный день / 01
@@ -72,16 +113,53 @@ ru:
   preview_take: Дубль 01
   preview_selected: Рабочий дубль
   preview_notes: 2 замечания
+  preview_note_author: Режиссёр · Текстовое замечание
+  preview_note_text: Задержимся на раскрытой книге чуть дольше перед движением к окну.
   about_eyebrow: Меньше поиска. Больше съёмки.
   about_line_one: Контекст остаётся
   about_line_two: рядом с дублем.
+  about_description: Во время съёмки важно помнить, к какому дню относится видео, что заметила группа и какой вариант выбрал режиссёр. Takebook хранит эти детали рядом с материалом, чтобы к обсуждению было легко вернуться.
   features:
-    - title: Порядок в материалах
-      text: Проект, съёмочный день и его дубли складываются в понятную структуру.
-    - title: Замечания по делу
-      text: Текст и голосовые заметки помогают сохранить детали обсуждения рядом с видео.
-    - title: Понятное решение
-      text: Выбранный рабочий дубль виден участникам проекта — к нему легко вернуться.
+    - title: Понятное место для материала
+      text: Откройте проект, посмотрите состав и роли группы, затем перейдите к съёмочному дню с датой, локацией и дублями. Нужное видео каждый раз находится в знакомой структуре.
+    - title: Обсуждение рядом с видео
+      text: Посмотрите дубль и оставьте текстовое или голосовое замечание. Записи привязаны к конкретному дублю и показывают автора, поэтому контекст обсуждения сохраняется.
+    - title: Выбор режиссёра виден группе
+      text: Режиссёр может отметить рабочий дубль съёмочного дня. После сохранения решения участники видят выбранный вариант, когда возвращаются к проекту.
+  workflow_eyebrow: От съёмки к обсуждению
+  workflow_heading: Съёмочный день в четырёх шагах.
+  workflow_description: Пройдите путь от материала в проекте до решения режиссёра — с замечаниями под рукой.
+  workflow_steps:
+    - title: Откройте съёмочный день
+      text: Найдите проект, проверьте состав группы, дату и локацию, затем откройте список дублей нужного дня.
+    - title: Добавьте следующий дубль
+      text: Запишите видео в приложении со звуком или без него либо импортируйте из медиатеки. При желании добавьте текстовое замечание и загрузите дубль в съёмочный день.
+    - title: Посмотрите и обсудите
+      text: Просмотрите видео, прослушайте голосовые и добавьте свои наблюдения об игре, композиции, движении камеры или звуке.
+    - title: Сохраните решение
+      text: Режиссёр отмечает выбранный дубль. Решение остаётся в съёмочном дне вместе с материалами и замечаниями, на которые опиралась группа.
+  workflow_limit: Один дубль — до 60 секунд и 150 МБ. Приложение проверяет видео перед загрузкой.
+  crew_eyebrow: Для тех, кто создаёт кадр
+  crew_heading: Один проект. Разные взгляды.
+  crew_description: Для короткометражных фильмов, учебных работ, музыкальных клипов и других съёмок, где группе нужно просматривать короткие дубли и сохранять общее обсуждение.
+  crew_roles:
+    - title: Режиссёрам
+      text: Просматривайте дубли по очереди, оставляйте указания и отмечайте рабочий вариант, который группа сможет легко найти.
+    - title: Операторам и звукорежиссёрам
+      text: Добавляйте материал и фиксируйте конкретные замечания об изображении, движении камеры и звуке — текстом или голосом.
+    - title: Остальным участникам группы
+      text: Возвращайтесь к съёмочному дню, чтобы просмотреть материал, прочитать замечания и увидеть сохранённый выбор.
+  practical_eyebrow: Перед следующей съёмкой
+  practical_heading: Детали, которые пригодятся.
+  practical_questions:
+    - question: Как группа получает доступ?
+      answer: Автор проекта может создать ссылку-приглашение и код для вступления. В списке группы видны роли участников; от роли зависят доступные действия, например выбор рабочего дубля. Для отдельного дубля также можно создать ссылку после проверки доступа.
+    - question: Что произойдёт, если пропадёт интернет?
+      answer: Ранее загруженные данные и сохранённые на устройстве медиа могут оставаться доступными. Неотправленные видеодубли, текстовые и голосовые замечания можно сохранить как локальные черновики. Для загрузки, публикации замечаний и сохранения общего решения нужно подключение; неотправленный черновик группа пока не видит.
+    - question: Что доступно при просмотре?
+      answer: Запускайте и останавливайте видео, переключайтесь в аудиорежим во время воспроизведения и слушайте голосовые замечания. Из списка съёмочного дня можно открыть другой дубль и вернуться к его обсуждению.
+    - question: Какие устройства и языки поддерживаются?
+      answer: Takebook предназначен для iPhone и iPad. Интерфейс доступен на русском и английском языках; светлая и тёмная темы следуют настройке устройства.
   documents_eyebrow: Важная информация
   documents_heading: Документы и поддержка
   documents_description: Информация об использовании Takebook и обращении с данными.

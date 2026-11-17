@@ -35,6 +35,7 @@
       </a>
       <div class="header-controls">
         <nav class="header-nav" aria-label="{{ t.navigation | escape }}">
+          <a href="{{ prefix | append: '/' | relative_url }}#features">{{ t.app_features | escape }}</a>
           <a href="{{ prefix | append: '/privacy/' | relative_url }}"{% if translation_path == '/privacy/' %} aria-current="page"{% endif %}>{{ t.privacy | escape }}</a>
           <a href="{{ prefix | append: '/support/' | relative_url }}"{% if translation_path == '/support/' %} aria-current="page"{% endif %}>{{ t.support | escape }} <span aria-hidden="true">↗</span></a>
         </nav>
